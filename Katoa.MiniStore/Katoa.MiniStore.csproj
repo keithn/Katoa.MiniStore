@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>Keith Nicholas</Authors>
+        <Description>Incredibly simple string based key value store built over SQLite</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageTags>keyvalue</PackageTags>
+        <PackageReleaseNotes>This is the initial release.  It's sup</PackageReleaseNotes>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
