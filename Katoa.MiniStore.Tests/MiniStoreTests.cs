@@ -73,6 +73,18 @@ public class MiniStoreTests : IDisposable
             .HaveCount(2)
             .And.Contain(new[] { "Test", "Case" });
     }
+    [Fact]
+    public void KeysLike()
+    {
+        _store.Put("Test", "Value");
+        _store.Put("Test2", "Value2");
+        _store.Put("Case", "Another");
+        _store.KeysLike("Test%").Should()
+            .HaveCount(2)
+            .And.Contain(new[] { "Test", "Test2" })
+            .And.NotContain("Case");
+        
+    }
 
     [Fact]
     public void BatchPut()
@@ -87,7 +99,7 @@ public class MiniStoreTests : IDisposable
     
     public void Dispose()
     {
-        // Used to release the connection pools hold on the database file so that the next test can reopen the file.
+        // Used to release the connection pools hold on the database file so that the next test can recreate the file.
         SqliteConnection.ClearAllPools();
     }
 }

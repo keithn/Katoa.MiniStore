@@ -9,6 +9,12 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageTags>keyvalue</PackageTags>
         <PackageReleaseNotes>This is the initial release.  It's sup</PackageReleaseNotes>
+        <Title>Katoa.MiniStore</Title>
+        <Copyright>(c) 2021 Keith Nichgolas</Copyright>
+        <PackageProjectUrl>https://github.com/keithn/Katoa.MiniStore</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/keithn/Katoa.MiniStore/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/keithn/Katoa.MiniStore</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
